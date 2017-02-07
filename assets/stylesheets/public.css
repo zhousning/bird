@@ -1,0 +1,27 @@
+@charset "utf-8";
+html, body{
+  height: 100%;
+  width: 100%;
+}
+body{
+	font: 14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+  background-color: #fff;
+  margin: 0;
+  color: #4c4c4c;
+  padding: 0;
+  overflow: hidden;
+}
+.border-all-zero{
+	border: 0px;
+}
+.border-radius-all-zero{
+	border-radius: 0px;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+}
+.margin-right-15{
+	margin-right: 15px;
+}
+.background-white{
+	background: white;
+}
