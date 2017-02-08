@@ -5,6 +5,7 @@
 <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 <title>地图浏览</title>
 <link rel="stylesheet" href="assets/lib/bootstrap/css/bootstrap.css" type="text/css"/>
+<link rel="stylesheet" href="assets/lib/fontawsome/css/font-awesome.min.css">
 <link rel="stylesheet" href="assets/stylesheets/public.css" type="text/css"/>
 <link rel="stylesheet" href="assets/stylesheets/index-map.css" type="text/css"/>
 <link rel="stylesheet" href="assets/stylesheets/index.css" type="text/css"/>
@@ -18,38 +19,127 @@
 </head>
 
 <body>
-  <div class="container-fluid" id="app">
-    <div id="maps"></div>
-    <div id="left-panel">
-      <div class="panel">
-        <div class="panel-heading">
-          <div class="row">
-            <div class="col-xs-3 panel-heading-city">
-              <p>
-                济宁
-              </p>
-            </div>
-            <div class="col-xs-6 panel-heading-title">
-              <p>
-                空气质量 AQI指数 
-              </p>
-            </div>
-            <div class="col-xs-3 text-right">
-              <div class="panel-operate panel-fold-icon" data-toggle="collapse" data-target="#filter-panel">
-              </div>
-            </div>
+<div class="container-fluid" id="app">
+  <div id="maps"></div>
+  <div id="left-panel">
+    <div class="panel panel-box-boundary">
+      <div class="panel-heading border-radius-all-zero">
+        <div class="row">
+          <div class="col-xs-9 panel-heading-title">
+            济 宁
+            <small>
+              空气质量&nbsp;&nbsp;AQI指数 
+            </small>
+          </div>
+          <div class="col-xs-3 text-right">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <span class="icon-chevron-down"></span>
+              </a>
+            </h4>
           </div>
         </div>
-
-        <div class="panel-body">
-          <div class="row">
-            <div id="filter-panel" class="filter-panel">
-              xxxx
+      </div>
+      <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+        <div id="filter-panel" class="panel-body border-radius-all-zero">
+          <h3 class="filter-aqi">数据更新时间: 2015-12-18 13:00</h3>
+          <ul id="filter-data-wrapper" class="list-group list-group-horizontal">
+            <li class="list-group-item">
+            <div class="circle circle-green">
+              260
             </div>
+            <p class='pollutant-title'>AQI指数</p>
+            </li>
+            <li class="list-group-item">
+            <div class="circle circle-orange">
+              中度
+            </div>
+            <p class='pollutant-title'>空气质量级别</p>
+            </li>
+            <li class="list-group-item">
+            <div class="circle circle-green">
+              123
+            </div>
+            <p class='pollutant-title'>全国排名</p>
+            </li>
+          </ul>
+          <hr/>
+          <h3 class="air-quality">
+            监测站点空气质量：
+            <small>13:00发布</small>
+          </h3>
+          <div id="air-ctn" class="row">
+            <div class="col-md-12 text-center">
+              <div class="list-group">
+                <a href="#" class="list-group-item col-md-3 active">全部</a>
+                <a href="#" class="list-group-item col-md-3">国控点</a>
+                <a href="#" class="list-group-item col-md-3">省控点</a>
+                <a href="#" class="list-group-item col-md-3">微环境</a>
+              </div>
+            </div>
+          </div> 
+          <div id="air-data-ctn" class="table-responsive">
+            <div class="row air-data-title text-center">
+              <div class="col-md-3 text-left">
+                排名
+                <i class="icon-sort"></i>
+              </div>
+              <div class="col-md-4">
+                监测点
+              </div>
+              <div class="col-md-4 text-right">
+                AQI
+                <span class="glyphicon glyphicon-triangle-bottom"></span>
+              </div>
+            </div>
+            <div class="air-data-wrapper">
+              <table class="table text-center">
+                <tr>
+                  <td>1</td>
+                  <td>室外测试</td>
+                  <td class="text-center"><span class="badge badge-yellow">109</span></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>火炬路</td>
+                  <td class="text-center"><span class="badge badge-yellow">109</span></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>农业学校</td>
+                  <td class="text-center"><span class="badge badge-orange">209</span></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>污水处理厂</td>
+                  <td class="text-center"><span class="badge badge-orange">239</span></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>电化学校</td>
+                  <td class="text-center"><span class="badge badge-yellow">409</span></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>联通大厦</td>
+                  <td class="text-center"><span class="badge badge-yellow">309</span></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>中区医院</td>
+                  <td class="text-center"><span class="badge badge-red">309</span></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="text-right more-info-wrapper">
+            <a class="link-green">查看更多信息</a>
           </div>
         </div>
       </div>
     </div>
+  </div>
+</div>
   </div>
   <div id="app-right-top"></div>
   <div id="map-operate"></div>

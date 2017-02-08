@@ -47,8 +47,79 @@ body{
   margin-right:auto;
   margin-bottom: 10px;
 }
+.circle {
+  display: inline-block;
+  text-align: center;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  border-radius: 50%;
+  font-size: 19px;
+}
+.circle-green {
+  border: 2px solid #0A8E66;
+}
+.circle-orange {
+  border: 2px solid #FF7F04;
+  color: #FF7F04;
+}
+
 .infoBox{
   background: white;
   -webkit-box-shadow: 0 0px 10px #B1AEAC;
   box-shadow: 0 0px 10px #B1AEAC;
+}
+#air-ctn .list-group-item{
+  display: inline-block;
+  margin-right: -4px;
+  padding: 5px 15px;
+}
+#air-ctn .col-md-3{
+  width: 26%;
+}
+#air-ctn .active{
+  background: #0C8D66; 
+}
+#air-ctn .list-group-item:first-child {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+#air-ctn .list-group-item:last-child {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.force-overflow{
+	min-height: 450px;
+}
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 5px;
+	background-color: #fffff;
+}
+
+::-webkit-scrollbar
+{
+	width: 5px;
+	background-color: #fffff;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 5px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #D7D7D7;
+}
+.link-green , .link-green:hover{
+  color: #0C8D65;
+  cursor: pointer;
+}
+.badge-yellow {
+  background: #ECCD00;
+}
+.badge-orange {
+  background: #FF7E00;
+}
+.badge-red {
+  background: red;
 }
