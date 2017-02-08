@@ -123,3 +123,6 @@ body{
 .badge-red {
   background: red;
 }
+.clear-both{
+  clear: both;
+}
