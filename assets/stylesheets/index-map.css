@@ -1,0 +1,88 @@
+@charset "utf-8";
+
+#place-air-index .panel{
+  padding: 10px 20px;
+}
+#place-air-index .panel-heading{
+  padding: 0px;
+}
+#place-air-index hr{
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+#place-air-index .panel-title span{
+  font-size: 14px;
+}
+#place-air-index .panel-title span{
+  margin-right: 15px;
+  font-size: 18px;
+}
+#place-air-index .infoBox img{
+  width: 15px;
+  height: 15px;
+}
+.pollute-status-wrapper .pollute-status-left{
+  border-right: 1px dashed #dfdfdf;
+  padding-right: 25px;
+}
+.pollute-status-wrapper .pollute-status-right{
+  padding-right: 0px;
+}
+.pollute-status-wrapper .pollute-status-left h2{
+  margin-top: 0px;
+  font-size: 40px;
+  font-weight: 600;
+  color: #505050;
+}
+.pollute-status-wrapper .pollute-status-left h2 small{
+  font-size: 14px;
+  margin-left: 14px;
+}
+.pollute-status-left .status-badge{
+  background: #E73A18;
+  color: white;
+  padding: 1px;
+  text-align: center;
+  margin: 10px 0px;
+  border-radius: 25px;
+  -moz-border-radius:25px;
+}
+.pollute-status-wrapper .pollutant-wrapper{
+  font-size: 12px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+.pollute-status-wrapper .pollutant-wrapper span{
+  color: #838383;
+}
+.list-group-horizontal.list-group{
+  margin-bottom: 0px;
+}
+.list-group-horizontal .list-group-item {
+  display: inline-block;
+  margin-right: -4px;
+  margin-bottom: 0px;
+  padding: 0px 9px 0px 5px;
+  border: 0px;
+  text-align: center;
+}
+.list-group-horizontal .list-group-item .pollutant-title{
+  font-size: 12px;
+  color: #848484;
+}
+.suggest-info {
+  font-size: 12px;
+  color: #838383;
+  margin-top: 7px;
+  margin-bottom: 0px;
+  position: relative;
+  padding-left: 35px;
+}
+.suggest-info img {
+  height: 25px;
+  width: 25px;
+  margin-right: 10px;
+  position: absolute;
+  left: 0px;
+  top: -6px;
+}

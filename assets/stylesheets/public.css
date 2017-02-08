@@ -25,3 +25,30 @@ body{
 .background-white{
 	background: white;
 }
+.bcgcolor-light-red{
+  background-color: #E73A18;
+}
+.bcgcolor-buff{
+  background-color: #EECB00;
+}
+.bcgcolor-reseda{
+  background-color: #4CDC58;
+}
+.circle-badge {
+  height: 40px;
+  width: 40px;
+  line-height:40px;
+  text-align: center;
+  border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+  color:white;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom: 10px;
+}
+.infoBox{
+  background: white;
+  -webkit-box-shadow: 0 0px 10px #B1AEAC;
+  box-shadow: 0 0px 10px #B1AEAC;
+}

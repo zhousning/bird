@@ -12,10 +12,11 @@
 }
 #left-panel{
   position: absolute;
-  left: 20px;
+  z-index: 800;
+  left: 30px;
   top: 20px;
   overflow: hidden;
-  pointer-events: none;
+  width: 350px;
 }
 #app-right-top{
   z-index: 4;
@@ -45,3 +46,30 @@
   bottom: 25px;
   left: 20px;
 }
+.aqi-wrapper{
+  height: 120px;
+  padding: 20px 0px;
+}
+#left-panel .panel-heading{
+  color: white;
+  background: #229570;
+}
+#left-panel .panel-heading-city{
+  font-size: 16px;
+}
+#left-panel .panel-heading-title{
+  font-size: 12px;
+}
+#left-panel .panel-operate{
+  width: 20px; 
+  height: 20px;
+  background-size: cover;
+}
+.panel-fold-icon {
+  background: url("../images/fold.png") no-repeat; 
+}
+.panel-spread-icon {
+  background: url("../images/spread.png") no-repeat; 
+}
+
+
